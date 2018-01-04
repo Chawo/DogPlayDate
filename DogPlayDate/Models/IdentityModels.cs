@@ -20,6 +20,9 @@ namespace DogPlayDate.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Dog> Dogs { get; set; }
+        public DbSet<Breed> Breeds { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
