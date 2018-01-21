@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DogsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -210,6 +211,10 @@
     <Compile Include="Migrations\201801042245500_PopulateBreedsTable.cs" />
     <Compile Include="Migrations\201801042245500_PopulateBreedsTable.Designer.cs">
       <DependentUpon>201801042245500_PopulateBreedsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801060208534_UpdatedDogTableForGenderAttribute.cs" />
+    <Compile Include="Migrations\201801060208534_UpdatedDogTableForGenderAttribute.Designer.cs">
+      <DependentUpon>201801060208534_UpdatedDogTableForGenderAttribute.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -277,6 +282,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Dogs\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801042245500_PopulateBreedsTable.resx">
       <DependentUpon>201801042245500_PopulateBreedsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801060208534_UpdatedDogTableForGenderAttribute.resx">
+      <DependentUpon>201801060208534_UpdatedDogTableForGenderAttribute.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
